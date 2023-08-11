@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Happy Tots School</title>
+	<meta name="description" content="Great trucks & motor spare">
+	<meta name="keywords" content="truck spares, vehicle spares, auto spares shop, truck parts, motor spares in vereening">
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			text-decoration: none;
+			list-style: none;
+			box-sizing: border-box;
+		}
+		nav{
+			background: green;
+			height: 80px;
+			width: 100%;
+		}
+		#main-head{
+			font-size: 35px;
+			color: green;
+			line-height: 80px;
+			background-size: cover;
+			display: block;
+			margin-bottom: 0px;
+			text-align: center;
+			font-family: cursive;
+			font-weight: bold;
+
+
+		}
+		nav ul{
+			float: right;
+			margin-right: 20px;
+
+		}
+		nav ul li{
+			display: inline-block;
+			line-height: 80px;
+			margin: 0 5px;
+			position: relative;
+
+		}
+		nav ul li a{
+			color: white;
+			font-size: 20px;
+			text-transform: uppercase;
+			padding: 7px 13px;
+			border-radius: 3px;
+			display: inline-block;
+					
+			}
+			a.active,a:hover{
+				color: white;
+				transition: 0.15s;
+				
+
+			}
+			.checkbtn{
+				font-size: 30px;
+				color: white;
+				float: right;
+				line-height: 80px;
+				margin-right: 40px;
+				cursor: pointer;
+				display: none;
+			}
+			#check{
+				display: none;
+			}
+			
+			nav ul li a:hover{
+				color: white;
+				display: inline-block;
+				background-color: green;
+				padding: 5px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				transition: 0.15s;
+				opacity: 0.5;
+			}
+			#body-main{
+				background-image: url(images/tots.jpg);
+				background-size: cover;
+			}
+			#tribe{
+				color: white;
+				margin-right: 10px;
+			}
+			#facebook{
+				width: 20px;
+				border-radius: 7px;
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+			#instagram{
+				width: 20px;
+				border-radius: 5px;
+			}
+			#tribe:hover{
+				color: blue;
+				background-color: white;
+				cursor: pointer;
+			}
+		
+		a:hover{
+			color: red;
+			background-color: green,
+			cursor: pointer;
+			opacity: 0.6;
+			transition: 0.17s;
+		}
+		#container{
+			width: 100%;
+			min-height: 100vh;
+			padding: 5%;
+			background-image: url(images/search);
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.slider-frame{
+		overflow: hidden;
+		width: 800px;
+		margin-left: 400px;
+		margin-top: 20px;
+		height: 700px;
+		margin-left: 360px;
+		margin-top: 20px;
+
+	}
+	#admissions{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#tots{
+		width: 800px;
+		border-radius: 5px;
+	}
+	#l{
+		width: 800px;
+		border-radius: 5px;
+	}
+
+	@-webkit-keyframes slide_animation{
+		0% {left:0px;}
+		10% {left:0px;}
+		20% {left:800px;}
+		30% {left:800px;}
+		40% {left:1600px;}
+		50% {left:1600px;}
+		60% {left:800px;}
+		70% {left:800px;}
+		80% {left:0px;}	
+		90% {left:0px;}
+		100% {left:0px;}
+		
+	}
+	.slide-images{
+		width: 800px;
+		margin: 0 0 0 -800px;
+		position: relative;
+		-webkit-animation-name: slide_animation;
+		-webkit-animation-duration: 20s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-direction: alternate;
+		-webkit-animation-play-state: running;
+	}
+	.image-container{
+		width: 900px;
+		position: relative;
+		float: left;
+		height: 800px;
+	}
+		
+	</style>
+	<link rel="stylesheet" type="text/css" href="http://kit.fontawesome.com/a076d05399">
+</head>
+
+<br>
+<body id="body-main">
+	<h1 id="main-head">HAPPY TOTS SCHOOL</h1><br>
+	<nav>
+
+<a href="https://www.facebook.com/happytotsinfantsschool/"><img id="facebook" src="images/facebook.jpg" target="_blank"></a>
+<a href=""><img id="instagram" src="images/instagram.jpg" target="_blank"></a>
+		
+	<br>
+	<ul>
+		<li><a class="active" href="index.html">Home</a></li>
+		<li><a href="details.html">About Us</a></li>
+		<li><a href="details.html">Admission</a></li>
+		<li><a href="contacts.html">Contacts</a></li>
+	</ul>
+	</nav>
+	<br>
+	<br>
+
+	<div class="slider-frame">
+	<div class="slide-images">
+		
+			
+			<div class="img-container">
+				<img  src="images/admissions.jpg">
+				
+			</div>
+
+			</div>
+</div>
+	
+
+</body>
+</html>
