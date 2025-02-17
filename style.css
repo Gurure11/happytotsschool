@@ -1,406 +1,53 @@
-  <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Happy Tots">
-    <meta name="keywords" content="pre-school in kadoma, private schoolin kadoma">                                  
-    
-    <title>Happy Tots</title>
-    <style type="text/css">
-        
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-        
-        #{
-             width: 600px;
-            border-radius: 5px;
-        }
-        #{
-            width: 600px;
-            border-radius: 5px;
-        }
-        #home:hover{
-                background-color: blue;
-                color: white;
-                opacity: 0.6;
-                transition: 0.16s;
-                cursor: pointer;
-                padding: 5px;
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
 
-        }
-        #events:hover{
-                  background-color: blue;
-                color: white;
-                opacity: 0.6;
-                transition: 0.16s;
-                cursor: pointer; 
-                padding: 5px; 
-        }
-        #contacts:hover{
-                background-color: blue;
-                color: white;
-                opacity: 0.6;
-                transition: 0.16s;
-                cursor: pointer;
-                padding: 5px;
-        }
-        #home{
-            margin-right: 20px;
+main {
+    padding: 1rem;
+}
 
+.course {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
 
-        }
-        #events{
-            margin-right: 20px;
-        }
-        #swim{
-            width: 700px;
-            border-radius: 5px;
+.course img {
+    width: 100px;
+    height: auto;
+    margin-right: 1rem;
+}
 
-        }
-        h2{
-            text-decoration: underline;
+button.enroll-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
 
-        }
-        h1{
-            text-decoration: underline;
-            font-weight: bold;
-            font-size: 30px;
-            background-color: blue;
-            color: white;
-            line-height: 80px;
-        }
-        #a{
-           width: 500px;
-            border-radius: 5px; 
-            height: 500px;
-        }
-        #l{
-            width: 500px;
-            border-radius: 5px;
-        }
-        #s{
-            width: 500px;
-            border-radius: 300px;
-        }
-        #w{
-            width: 500px;
-            border-radius: 10px;
-        }
-        #x{
-            width: 500px;
-            border-radius: 10px;
-            height: 600px;
-        }
-        #y{
-            width: 500px;
-            border-radius: 10px;
-            height: 700px;
-        }
-         #m{
-            width: 500px;
-            border-radius: 10px;
-            height: 600px;
-        }
-        #n{
-            width: 500px;
-            border-radius: 10px;
-        }
-        #p{
-            width: 500px;
-            border-radius: 10px;
-            height: 700px;
-        }
-        #v{
-            width: 500px;
-            border-radius: 10px;
-        }
-        #main-body{
-            text-align: center;
-            align-items: center;
-            color: blue;
-        }
-        #j{
-            width: 500px;
-            border-radius: 10px;
+#course-details {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-top: 1rem;
+}
 
-        }
-        #e{
-            width: 500px;
-            border-radius: 10px;
-        }
-        #ba{
-            width:500px;
-            border-radius: 10px;
-        }
-      #ha{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #he{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #hi{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      ho{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #hu{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #da{
-        width:500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #de{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #di{width: 500px;
-            border-radius: 10px;
-            height: 600px;
-        
-      }
-      #ta{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #te{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #ti{
-        width: 700px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #tu{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      #za{
-        width: 500px;
-            border-radius: 10px;
-            height: 600px;
-      }
-      h4{
-        color: white;
-        background-color: black;
-        font-size: 30px;
-      }
-      #gara{
-        width: 400px;
-        border-radius: 5px;
-      }
-      #contacts{
-        margin-right: 12px;
-      }
-      #party:hover{
-        color: green;
-        cursor: pointer;
-        transition: 0.18s;
-        opacity: 0.6;
-        background-color: grey;
-        
-      }
-    </style>
-     
-
-</head>
-<body id="main-body">
-    <h1>Happy Tots School</h1>
-          
-        
-
-    <a id="home" href="index.html">Home Page</a>
-    <a id="events" href="details.html">About Us</a>
-    <a id="contacts" href="contacts.html">Contacts</a>
-  <a id="party" href="#party">End of Year Event Photos</a>
-    <br>
-    <br>
-    <h4>School Trips</h4><br>
-    <br>
-   <a href="images/v.jpg"> <img id="v" src="images/v.jpg"></a><br>
-   <p> Our kids went on an educative trip around the country to the Airport and Game park (they went to Chengeta Safari lodge<br>
-     and Mukuvisi wood lands and had a wonderful lunch at St Elmos restaurant in Belgravia harare). Its part of the education process<br>
-     so that what they are taught in class becomes a reality. It helps our kids see in real life what they have been learning in class.</p>
-    <br>
-    <br>
-   <a href="images/w.jpg"> <img id="w" src="images/w.jpg"></a><br>
-    Our children had the chance to get onto the plane for the first time and it was an amazing experience. 
-    <br>
-    <br>
-    <a href="images/x.jpg"><img id="x" src="images/x.jpg"></a><br>
-    <br>
-    <br>
-    <a href="images/y.jpg"><img id="y" src="images/y.jpg"></a><br>
-    <br>
-    <br>
-    <br>
-    Our kids had fun at the same time learning. Seeing is beleiving.<br>
-    <br>
-    <br>
-    <video width="700" height="500" controls>
-        <source src="video/ci.mp4" type="video/mp4">
-    </video>
-    <br>
-    <h4>On our school Trip</h4>.
-    <br>
-    <br>
-    <video width="700" height="500" controls>
-        <source src="video/ce.mp4" type="video/mp4">
-    </video>
-    <br>
-    This was fun and experience of a life time for our children. Once again we thank our parents for such an event.
-    <br>
-    <br>
-   <a href="images/m.jpg"><img id="m" src="images/m.jpg"></a><br>
-    <br>
-    <br>
-   <a href="images/n.jpg"> <img id="n" src="images/n.jpg"></a><br>
-    <br>
-    Buffalo
-    <br>
-    <br>
-   <a href="images/p.jpg"><img id="p" src="images/p.jpg"></a><br>
-    <br>
-    King of the jungle "lion"
-    <br>
-    <br>
-  <video width="700" height="500" controls>
-    <source src="video/jona.mp4" type="video/mp4">
-  </video>
-  <br>
-    <br>
-    It was fun watching the animals in real life for our kids. They were so overjoyed some having to watch a lion and a buffalo for<br>
-    the first time in their life.<br>
-    <br>
-    <br>
-    <h4>Parents</h4><br>
-    <br>
-    <br>
-    Our parents support us in every event and school trip, we are really grateful to parents for the support.
-    <br>
-    <br>
-    <a href="images/j.jpg"><img id="j" src="images/j.jpg"></a><br>
-    We are grateful for the support our parents show us. It means a lot to us.
-    <br>
-    <br>
-   <a href="images/e.jpg"> <img id="e" src="images/e.jpg">/<br>
-    <br>
-    <br>
-   <a href="images/ba.jpg"><img id="ba" src="images/ba.jpg"></a><br>
-    <br>
-    <br>
-    Without our parents none of this would be possible. We are very grateful to the students and parents who love and support us.
-    <br>
-    <br>
-  <h4>Our Pictures</h4>
-  <br>
-  <br>
-<a href="images/ha.jpg"><img id="ha" src="images/ha.jpg"></a><br>
-Our kids can swim, by the time they get to grade one, they will be excellent.
-  <br>
-  <br>
- <a href="images/he.jpg"> <img id="he" src="images/he.jpg"></a><br>
-  Drama and shows, our kids master it all. They can act, sing and recite poems.
-  <br>
-  <br>
- <a href="images/hi.jpg"> <img id="hi" src="images/hi.jpg"></a><br>
-  Our loving parents who support their kids and the school show and demonstrate love.
-  <br>
-  <br>
- <a href="images/ho.jpg"> <img id=ho"" src="images/ho.jpg"></a><br>
-  Red Carpet for our Parents, our masters.
-  <br>
-  <br>
- <a href="images/hu.jpg"> <img id="hu" src="images/hu.jpg"></a><br>
-  <br>
-  <br>
-  <a href="images/da.jpg"><img id="da" src="images/da.jpg"></a><br>
-  <br>
-  <br>
- <a href="images/de.jpg"> <img id="de" src="images/de.jpg"></a><br>
-  <br>
-  <br>
- <a href="images/di.jpg"> <img id="di" src="images/di.jpg"</a><br>
-  Our mums and dads look executive! Wow wow wow.
-  <br>
-  <br>
- <a href="images/ta.jpg"> <img id="ta" src="images/ta.jpg"></a><br>
-  Our kids do a lot of activities to help with their mental and social growth.
-  <br>
-  <br>
-  <a href="images/te.jpg"><img id="te" src="images/te.jpg"></a><br>
-  <br>
-  <br>
-  <a href="images/ti.jpg"><img id="ti" src="images/ti.jpg"></a><br>
-  <br>
-  <br>
-  <a href="images/to.jpg"><img id="za" src="images/to.jpg"></a><br>
-  <br>
-  <br>
- <a href="images/tu.jpg"> <img id="tu" src="images/tu.jpg"></a><br>
-  <br>
-  <br>
-  <h4 id="party">End of Year Graduation</h4><br>
-  <br>
-  We had a beautiful end of the year event and our kids were dressed so smart and had beautiful perfomances in drama and singing with special guests <br>
-  like Mrs Machimula senior(gogo Machimula) giving a beautiful speach.<br><br>
-  <a href="images/gara.jpg"><img id="gara" src="images/gara.jpg"></a>
-   <a href="images/goro.jpg"><img id="gara" src="images/goro.jpg"></a><br>
-   <a href="images/giri.jpg"> <img id="gara" src="images/giri.jpg"></a>
-   <a href="images/guru.jpg"><img id="gara" src="images/guru.jpg"></a><br>
-   <a href="images/mara.jpg"> <img id="gara" src="images/mara.jpg"></a>
-   
-  <a href="images/muru.jpg"> <img id="gara" src="images/muru.jpg"></a><br>
-  <a href="images/ziri.jpg">  <img id="gara" src="images/ziri.jpg"></a>
-   
-
- <a href="images/noro.jpg">   <img id="gara" src="images/noro.jpg"></a><br>
-   <a href="images/nuru.jpg"><img id="gara" src="images/nuru.jpg"></a>
-  
- <a href="images/zere.jpg">  <img id="gara" src="images/zere.jpg"></a><br>
- 
-  <a href="images/nara.jpg"> <img id="gara" src="images/nara.jpg"></a>
-  <a href="images/zoro.jpg"> <img id="gara" src="images/zoro.jpg"></a><br>
-  
- <a href="images/gere.jpg">  <img id="gara" src="images/gere.jpg"></a>
-   
-  <a href="images/zara.jpg"> <img id="gara" src="images/zara.jpg"></a><br>
- 
-    <a href="images/miri.jpg"> <img id="gara" src="images/miri.jpg"></a>
-   <a href="images/moro.jpg"> <img id="gara" src="images/moro.jpg"></a><br>
-   <a href="images/nere.jpg">  <img id="gara" src="images/nere.jpg"></a>
-   <a href="images/mere.jpg"> <img id="gara" src="images/mere.jpg"></a><br>
-  <br>
-
-  NB: We are open for 2024 intake you can apply in person or on our website.<br>
-  <br>
-
-    <footer>
-
-    <a id="home" href="index.html">Home Page</a>
-    <a id="events" href="details.html">About Us</a>
-    <a id="contacts" href="contacts.html">Contacts</a><br>
-    <br>
-    &copy; Happy Tots School 2023.
-    <br>
-    <br>
-        
-    </footer>
+#course-video {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
