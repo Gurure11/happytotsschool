@@ -1,12 +1,20 @@
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const enrollButtons = document.querySelectorAll('.enroll-button');
-    const studentDashboard = document.getElementById('student-dashboard');
-    const enrolledCourses = document.getElementById('enrolled-courses');
     const courseDetailsSection = document.getElementById('course-details');
     const courseName = document.getElementById('course-name');
     const courseObjective = document.getElementById('course-objective');
     const courseVideo = document.getElementById('course-video');
     const courseText = document.getElementById('course-text');
+    const startQuizButton = document.getElementById('start-quiz-button');
+    const quizSection = document.getElementById('quiz-section');
+    const quizForm = document.getElementById('quiz-form');
+    const submitQuizButton = document.getElementById('submit-quiz-button');
+    const certificateSection = document.getElementById('certificate-section');
+    const downloadCertificateButton = document.getElementById('download-certificate-button');
+    const studentDashboard = document.getElementById('student-dashboard');
+    const progressBar = document.getElementById('progress');
+    const enrolledCourses = document.getElementById('enrolled-courses');
+    const passedCourses = document.getElementById('passed-courses');
 
     const courses = {
         1: {
@@ -35,11 +43,23 @@
         }
     };
 
+    const quizQuestions = [
+        {
+            question: "What is health promotion?",
+            options: ["A", "B", "C", "D"],
+            answer: "A"
+        },
+        // Add more quiz questions here
+    ];
+
+    let currentCourseId = null;
+    let quizScore = 0;
+
     enrollButtons.forEach(button => {
         button.addEventListener('click', () => {
             const courseElement = button.closest('.course');
-            const courseId = courseElement.getAttribute('data-id');
-            const course = courses[courseId];
+            currentCourseId = courseElement.getAttribute('data-id');
+            const course = courses[currentCourseId];
 
             courseName.textContent = course.name;
             courseObjective.textContent = course.objective;
@@ -48,7 +68,44 @@
             courseText.textContent = course.text;
 
             courseDetailsSection.style.display = 'block';
+            quizSection.style.display = 'none';
+            certificateSection.style.display = 'none';
             studentDashboard.style.display = 'none';
         });
     });
-});
+
+    startQuizButton.addEventListener('click', () => {
+        quizSection.style.display = 'block';
+        courseDetailsSection.style.display = 'none';
+
+        quizForm.innerHTML = '';
+        quizQuestions.forEach((question, index) => {
+            const questionElement = document.createElement('div');
+            questionElement.className = 'quiz-question';
+            questionElement.innerHTML = `
+                <p>${question.question}</p>
+                ${question.options.map((option, i) => `
+                    <label>
+                        <input type="radio" name="question${index}" value="${option}">
+                        ${option}
+                    </label>
+                `).join('')}
+            `;
+            quizForm.appendChild(questionElement);
+        });
+    });
+
+    submitQuizButton.addEventListener('click', () => {
+        const formData = new FormData(quizForm);
+        quizScore = 0;
+
+        quizQuestions.forEach((question, index) => {
+            const selectedOption = formData.get(`question${index}`);
+            if (selectedOption === question.answer) {
+                quizScore++;
+            }
+        });
+
+        if (quizScore >= 25) { // Assume passing score is 50%
+            certificateSection.style.display = 'block';
+            progressBar.style.width = `${(quizScore / quizQuestions.length)
