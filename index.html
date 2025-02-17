@@ -34,6 +34,7 @@
                 <button class="enroll-button">Enroll Now</button>
             </div>
         </section>
+
         <section id="course-details" style="display: none;">
             <h2 id="course-name"></h2>
             <p id="course-objective"></p>
@@ -42,10 +43,30 @@
                 Your browser does not support the video tag.
             </video>
             <div id="course-text"></div>
+            <button id="start-quiz-button">Start Quiz</button>
         </section>
+
+        <section id="quiz-section" style="display: none;">
+            <h2>Quiz</h2>
+            <form id="quiz-form">
+                <!-- Questions will be dynamically added here -->
+            </form>
+            <button id="submit-quiz-button">Submit Quiz</button>
+        </section>
+
+        <section id="certificate-section" style="display: none;">
+            <h2>Congratulations!</h2>
+            <p>You have passed the course and earned a certificate!</p>
+            <button id="download-certificate-button">Download Certificate</button>
+        </section>
+
         <section id="student-dashboard" style="display: none;">
             <h2>Student Dashboard</h2>
+            <div id="progress-bar">
+                <div id="progress"></div>
+            </div>
             <p id="enrolled-courses"></p>
+            <p id="passed-courses"></p>
         </section>
     </main>
     <script src="scripts.js"></script>
