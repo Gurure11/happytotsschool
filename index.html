@@ -1,74 +1,108 @@
+html
+Copy
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crest Vaal Online Learning Platform</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Linda Salon | Natal Spruit</title>
+    <link rel="stylesheet" href="styles.css">  <!-- You can create a styles.css file for styles -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #6c63ff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .service {
+            margin: 10px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 200px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #6c63ff;
+            color: white;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Our Online Learning Platform</h1>
-    </header>
-    <main>
-        <section id="courses">
-            <h2>Courses</h2>
-            <div class="course" data-id="1">
-                <img src="images/Vaal-Cresta-College-600x600-Medical-Secretary.jpg" alt="Health Promotion Officer">
-                <h3>Health Promotion Officer</h3>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course" data-id="2">
-                <img src="images/Vaal-Cresta-College-600x600-Educare.jpg" alt="Educare N4-N6">
-                <h3>Educare N4-N6</h3>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course" data-id="3">
-                <img src="images/Cresta-Vaal-College-600x600-Courses-HealthCare.jpg" alt="Medical Secretary N4-N6">
-                <h3>Medical Secretary N4-N6</h3>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-            <div class="course" data-id="4">
-                <img src="images/Vaal-Cresta-College-600x600-Social-Auxillary.jpg" alt="Social Auxiliary">
-                <h3>Social Auxiliary</h3>
-                <button class="enroll-button">Enroll Now</button>
-            </div>
-        </section>
 
-        <section id="course-details" style="display: none;">
-            <h2 id="course-name"></h2>
-            <p id="course-objective"></p>
-            <video id="course-video" controls>
-                <source src="" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <div id="course-text"></div>
-            <button id="start-quiz-button">Start Quiz</button>
-        </section>
+<header>
+    <h1>Linda Salon</h1>
+    <p>Experience the Best Hair Services in Natal Spruit</p>
+</header>
 
-        <section id="quiz-section" style="display: none;">
-            <h2>Quiz</h2>
-            <form id="quiz-form">
-                <!-- Questions will be dynamically added here -->
-            </form>
-            <button id="submit-quiz-button">Submit Quiz</button>
-        </section>
+<nav>
+    <a href="#about">About Us</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+</nav>
 
-        <section id="certificate-section" style="display: none;">
-            <h2>Congratulations!</h2>
-            <p>You have passed the course and earned a certificate!</p>
-            <button id="download-certificate-button">Download Certificate</button>
-        </section>
+<section id="about">
+    <h2>About Us</h2>
+    <img src="images/lo.jpg" alt="Linda Salon" style="width:100%; max-width:600px; border-radius: 8px;">
+    <p>Welcome to Linda Salon! With over ten years of experience in the beauty industry, Linda is passionate about providing top-notch hair services tailored to each client’s needs. At Linda Salon, we believe that great hair starts with great care.</p>
+</section>
 
-        <section id="student-dashboard" style="display: none;">
-            <h2>Student Dashboard</h2>
-            <div id="progress-bar">
-                <div id="progress"></div>
-            </div>
-            <p id="enrolled-courses"></p>
-            <p id="passed-courses"></p>
-        </section>
-    </main>
-    <script src="scripts.js"></script>
+<section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+        <div class="service">
+            <h3>Braiding</h3>
+            <img src="images/la.jpg" alt="Braiding" style="width:100%; border-radius: 8px;">
+            <p>Expert braiding services for all hair types and styles.</p>
+        </div>
+        <div class="service">
+            <h3>Relax</h3>
+            <img src="images/le.jpg" alt="Relax" style="width:100%; border-radius: 8px;">
+            <p>Professional relaxer treatments for smooth and sleek hair.</p>
+        </div>
+        <div class="service">
+            <h3>Weaves</h3>
+            <img src="images/li.jpg" alt="Weaves" style="width:100%; border-radius: 8px;">
+            <p>Beautiful weaves that blend seamlessly with your natural hair.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>For appointments and inquiries, please call us at: <strong>(123) 456-7890</strong></p>
+    <p>Or visit us at: <strong>Natal Spruit, South Africa</strong></p>
+</section>
+
+<footer>
+    <p>&copy; 2025 All rights reserved Linda Salon. Address: 20 Masakani Street, Natal Spruit, Johannesburg Cell +27 65 642 9330.</p>
+</footer>
+
 </body>
 </html>
