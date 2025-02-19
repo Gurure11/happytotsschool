@@ -1,1 +1,260 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linda Hair Salon</title>
+    <meta name="description" content="WMA Services">
+    <meta name="keywords" content="manicure services, make up artist, massage services in Kempton Park, pedicure nails, eye brows services, artificial nails artist, make up services in Kempton Park">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        h4 {
+            color: orange;
+            font-size: 30px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        p {
+            color: grey;
+            font-size: 18px;
+            padding: 0 20px;
+        }
+        nav {
+            background-color: #000;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: orange;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        table th, table td {
+            padding: 12px;
+            border: 1px solid #ddd;
+        }
+        table th {
+            background-color: orange;
+            color: white;
+            font-size: 18px;
+        }
+        table tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        table tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            color: white;
+            background-color: black;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="#prices">Our Prices</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+    
+    <h4>Linda Hair Salon</h4>
+    <h4>Our Hair Styles</h4>
+    <div class="gallery">
+        <a href="images/wa.jpg"><img src="images/wa.jpg" alt="Hair Style 1"></a>
+        <a href="images/we.jpg"><img src="images/we.jpg" alt="Hair Style 2"></a>
+        <a href="images/wi.jpg"><img src="images/wi.jpg" alt="Hair Style 3"></a>
+    </div>
+    <p>We have a wide range of hair styles to choose from. Our hair technicians are experienced and will treat you in style.</p>
+    <hr>
+    
+    <h4>Manicure & Pedicure</h4>
+    <div class="gallery">
+        <a href="images/wo.jpg"><img src="images/amai.jpg" alt="Manicure 1"></a>
+        <a href="images/wu.jpg"><img src="images/ar.jpg" alt="Manicure 2"></a>
+        <a href="images/xa.jpg"><img src="images/aa.jpg" alt="Manicure 3"></a>
+    </div>
+    <p>We offer acrylic and gel artificial nails with the latest trends. You name it, we will do it.</p>
+    <hr>
+  <div class="gallery">
+        <a href="images/4.jpg"><img src="images/4.jpg" alt="Manicure 1"></a>
+        <a href="images/5.jpg"><img src="images/5.jpg" alt="Manicure 2"></a>
+        <a href="images/6.jpg"><img src="images/6.jpg" alt="Manicure 3"></a>
+    </div>
+  <div class="gallery">
+        <a href="images/7.jpg"><img src="images/7.jpg" alt="Manicure 1"></a>
+        <a href="images/8.jpg"><img src="images/8.jpg" alt="Manicure 2"></a>
+        <a href="images/xa.jpg"><img src="images/aa.jpg" alt="Manicure 3"></a>
+    </div>
+    
+    <h4 id="prices">Our Prices</h4>
+    <table>
+        <thead>
+            <tr>
+                <th>Service</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Straight up</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Sweet & Sour</td>
+                <td>R350</td>
+            </tr>
+            <tr>
+                <td>Free Hand</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Kiddies Free Hand</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Bonding</td>
+                <td>R250</td>
+            </tr>
+            <tr>
+                <td>Rasor Cut</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Dreadz</td>
+                <td>Price on Consultation</td>
+            </tr>
+            <tr>
+                <td>Wool Style</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Two Line</td>
+                <td>R80</td>
+            </tr>
+            <tr>
+                <td>Hair Dye</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Own Pondo</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Our Pondo</td>
+                <td>R180</td>
+            </tr>
+            <tr>
+                <td>Twizzing</td>
+                <td>R20</td>
+            </tr>
+            <tr>
+                <td>Dark & Lovely Relaxer</td>
+                <td>R150</td>
+            </tr>
+            <tr>
+                <td>Resore Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Precise Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Soft & Free Relaxer</td>
+                <td>R120</td>
+            </tr>
+            <tr>
+                <td>Kiddies Relaxer</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Normal Braids Long</td>
+                <td>R400</td>
+            </tr>
+            <tr>
+                <td>Knotless Braids</td>
+                <td>R450</td>
+            </tr>
+            <tr>
+                <td>Extra Length Additional</td>
+                <td>R100</td>
+            </tr>
+            <tr>
+                <td>Bob Braids</td>
+                <td>R300</td>
+            </tr>
+            <tr>
+                <td>Straight Back Braids</td>
+                <td>R300</td>
+            </tr>
+            <tr>
+                <td>Chiskop</td>
+                <td>R50</td>
+            </tr>
+            <tr>
+                <td>Any Cut</td>
+                <td>R60</td>
+            </tr>
+            <tr>
+                <td>Brush Cut</td>
+                <td>R50</td>
+            </tr>
+            <tr>
+                <td>Shaving</td>
+                <td>R40</td>
+            </tr>
+            <tr>
+                <td>Trim</td>
+                <td>R20</td>
+            </tr>
+            <tr>
+                <td>Tapper</td>
+                <td>R50</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <footer>
+        &copy; Linda Hair Salon & Beauty Salon 2024
+    </footer>
+</body>
+</html>
